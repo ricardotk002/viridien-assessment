@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model MenuItem {
+  id    String  @id
+  cat   String
+  name  String
+  price Float
+  desc  String
+  tags  String  // JSON-encoded string[]
+  hue   Int
+  sizes String? // JSON-encoded string[], nullable
+}
