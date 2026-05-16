@@ -2,7 +2,7 @@ dev:
 	make -j2 dev-app dev-server
 
 dev-app:
-	cd app && npx expo start --ios
+	cd app && npx expo run:ios
 
 dev-server:
 	cd server && npm run start:dev
@@ -11,7 +11,7 @@ build:
 	make -j2 build-app build-server
 
 build-app:
-	cd app && npx expo build:ios
+	cd app && npx expo run:ios --configuration Release
 
 build-server:
 	cd server && npm run build

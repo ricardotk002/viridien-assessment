@@ -28,8 +28,8 @@ export default function ChatScreen() {
     scrollRef.current?.scrollToEnd({ animated: true });
   }, [messages, thinking]);
 
-  const handleSend = () => {
-    const text = draft;
+  const handleSend = (voiceText?: string) => {
+    const text = voiceText ?? draft;
     setDraft('');
     sendMessage(text);
   };

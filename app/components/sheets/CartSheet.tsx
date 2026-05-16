@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
   stepBtn: { width: 26, height: 26, borderRadius: 13, alignItems: 'center', justifyContent: 'center' },
   stepBtnText: { fontFamily: 'Geist_400Regular', fontSize: 16, color: Colors.ink, lineHeight: 20 },
   stepQty: { fontFamily: 'Geist_600SemiBold', fontSize: 14, color: Colors.ink, minWidth: 24, textAlign: 'center' },
-  totals: { marginHorizontal: 20, paddingVertical: 16, borderTopWidth: 0.5, borderStyle: 'dashed', borderTopColor: Colors.hairline, gap: 6, marginTop: 8 },
+  totals: { marginHorizontal: 20, paddingVertical: 16, borderTopWidth: 0.5, borderTopColor: Colors.hairline, gap: 6, marginTop: 8 },
   totalRow: { flexDirection: 'row', justifyContent: 'space-between' },
   totalLabel: { fontFamily: 'Geist_400Regular', fontSize: 13.5, color: Colors.inkSoft },
   totalValue: { fontFamily: 'Geist_400Regular', fontSize: 13.5, color: Colors.inkSoft },
