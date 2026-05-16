@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   info: { flex: 1 },
   wordmark: { fontFamily: 'InstrumentSerif_400Regular', fontSize: 22, lineHeight: 26, color: Colors.ink },
   statusRow: { flexDirection: 'row', alignItems: 'center', gap: 5, marginTop: 2 },
-  statusDot: { width: 6, height: 6, borderRadius: 3, backgroundColor: Colors.sage },
+  statusDot: { width: 6, height: 6, borderRadius: 3, backgroundColor: '#3a9e4f' },
   statusText: { fontFamily: 'Geist_400Regular', fontSize: 11.5, color: Colors.inkSoft },
   menuPill: {
     backgroundColor: '#fff',

@@ -19,6 +19,7 @@ export type ApplyResult = {
 };
 
 export function applyActions(cart: CartLine[], actions: Action[]): ApplyResult {
+  if (actions.some((a) => a.type === 'checkout')) actions = [{ type: 'checkout' }];
   let next = cart.map((l) => ({ ...l }));
   const added: ApplyResult['added'] = [];
   const removed: ApplyResult['removed'] = [];
