@@ -12,7 +12,7 @@ const menu = [
   { id: 'burrata', cat: 'Starters', name: 'Burrata & Stone Fruit', price: 14, desc: 'Heirloom peach, basil oil, sea salt, toasted sourdough.', tags: ['veg'], hue: 28, image: u('1505253716362-afaea1d3d1af') },
   { id: 'shishito', cat: 'Starters', name: 'Charred Shishitos', price: 9, desc: 'Smoked salt, lime, sesame.', tags: ['veg', 'spicy'], hue: 95, image: u('1603360946369-dc9bb6258143') },
   { id: 'polenta', cat: 'Starters', name: 'Crispy Polenta Bites', price: 11, desc: 'Parmesan, fresno chili jam, herb aioli.', tags: ['veg'], hue: 42, image: u('1504674900247-0877df9cc836') },
-  { id: 'oysters', cat: 'Starters', name: 'Half Dozen Oysters', price: 22, desc: "Today's east coast selection, mignonette.", tags: [], hue: 200, image: u('1694787534229-e8c7d8ed5db1') },
+  { id: 'oysters', cat: 'Starters', name: 'Half Dozen Oysters', price: 22, desc: "Today's east coast selection, mignonette.", tags: [], hue: 200, image: u('1632027543405-925ae0b0f98c') },
   { id: 'spicy-chicken', cat: 'Handhelds', name: 'Spicy Chicken Sandwich', price: 16, desc: 'Buttermilk-fried, calabrian chili mayo, slaw, brioche.', tags: ['spicy', 'popular'], hue: 18, image: u('1606755962773-d324e0a13086') },
   { id: 'brisket-burger', cat: 'Handhelds', name: 'Smoked Brisket Burger', price: 18, desc: 'Dry-aged blend, sharp cheddar, pickled onion, smoked aioli.', tags: ['popular'], hue: 12, image: u('1568901346375-23c9450c58cd') },
   { id: 'mushroom-melt', cat: 'Handhelds', name: 'Roasted Mushroom Melt', price: 14, desc: 'Maitake, gruyère, caramelized onion, sourdough.', tags: ['veg'], hue: 32, image: u('1546793665-c74683f339c1') },
