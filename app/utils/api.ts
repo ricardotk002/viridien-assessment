@@ -13,3 +13,11 @@ export async function sendChat(messages: Turn[], cart: CartLine[]) {
   if (!res.ok) throw new Error('Chat request failed');
   return res.json() as Promise<{ reply: string; actions: any[] }>;
 }
+
+export function createOrder(items: CartLine[], total: number) {
+  fetch(`${BASE}/orders`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ items, total }),
+  }).catch(() => {});
+}

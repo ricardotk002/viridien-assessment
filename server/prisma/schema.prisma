@@ -12,7 +12,16 @@ model MenuItem {
   name  String
   price Float
   desc  String
-  tags  String  // JSON-encoded string[]
+  tags  String
   hue   Int
-  sizes String? // JSON-encoded string[], nullable
+  sizes String?
+  image String?
+}
+
+model Order {
+  id        String   @id @default(cuid())
+  items     String   // JSON: [{menuId, qty, price, notes}]
+  total     Float
+  status    String   @default("placed")
+  createdAt DateTime @default(now())
 }

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { CartLine, applyActions } from '../utils/aiActions';
-import { sendChat } from '../utils/api';
+import { sendChat, createOrder } from '../utils/api';
 import { MENU_BY_ID } from '../constants/menu';
 
 export type Message =
@@ -132,7 +132,9 @@ export const useStore = create<State>((set, get) => ({
     const { cart } = get();
     if (!cart.length) return;
     const subtotal = cart.reduce((s, l) => s + l.qty * l.price, 0);
-    set({ lastTotal: subtotal * 1.0875, sheets: { menu: false, cart: false, placed: true } });
+    const total = subtotal * 1.0875;
+    createOrder(cart, total);
+    set({ lastTotal: total, sheets: { menu: false, cart: false, placed: true } });
   },
 
   reset: () => {
